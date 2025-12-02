@@ -1,18 +1,19 @@
 name: user-statistician
 
 on:
-schedule:
-  - cron: '0 0,12 * * *'
   workflow_dispatch:
+  schedule:
+    - cron: '0 0,12 * * *'
+
 jobs:
-  stats:
+  generate-stats:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Generate user stats SVG
+      - name: Generate GitHub Stats SVG
         uses: cicirello/user-statistician@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
- 
