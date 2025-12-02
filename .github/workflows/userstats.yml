@@ -3,7 +3,7 @@ name: user-statistician
 on:
   schedule:
     - cron: '0 3 * * *'    # runs daily at 03:00 UTC
-  workflow_dispatch:       # lets you run it manually too
+  workflow_dispatch:       # allows manual run
 
 jobs:
   stats:
