@@ -38,7 +38,7 @@ I'm a passionate high school student exploring the world of programming and soft
 ---
 
 ### 📊 GitHub Stats  
-![My GitHub Statistics](userstats.svg)
+![My GitHub Statistics](images/userstats.svg)
 
 ---
 
