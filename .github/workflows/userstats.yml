@@ -1,0 +1,18 @@
+name: user-statistician
+
+on:
+  schedule:
+    - cron: '0 3 * * *'    # runs daily at 03:00 UTC
+  workflow_dispatch:       # lets you run it manually too
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate user stats SVG
+        uses: cicirello/user-statistician@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
