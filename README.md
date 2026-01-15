@@ -29,11 +29,6 @@ I'm a passionate high school student exploring the world of programming and soft
 
 ---
 
-### 📊 GitHub Stats  
-![My GitHub Statistics](images/userstats.svg)
-
----
-
 ### 💬 Fun Fact  
 I love solving coding challenges, exploring AI projects, and contributing to open source in my free time 😄
 
